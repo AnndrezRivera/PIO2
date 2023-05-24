@@ -40,7 +40,7 @@ import locale
 
 ```python
 #Carga de datos
-df = pd.read_csv('datos_henrry')
+df = pd.read_csv('datos_henrry', delimiter=';')
 df = df.drop(['Indice','Unnamed: 0'], axis = 1)
 df['Fecha'] = pd.to_datetime(df['Fecha'])
 
@@ -222,7 +222,7 @@ Es importante tener en cuenta que cada accidente aéreo es único y puede presen
 
 
 ```python
-df_1 = pd.read_csv('datos_adicionales')
+df_1 = pd.read_csv('datos_adicionales', delimiter=';')
 df_1 = df_1.drop(['Unnamed: 0'], axis = 1)
 df_1['Fecha'] = pd.to_datetime(df_1['Fecha'])
 ```
@@ -337,7 +337,7 @@ En cuanto a los días, es el día de martes el que tiene la mayor punta de accid
 
 
 ```python
-df_2 = pd.read_csv('datos_complementarios_finales')
+df_2 = pd.read_csv('datos_complementarios_finales', delimiter=';')
 df_2 = df_2.drop(['Unnamed: 0'], axis = 1)
 df_2['Fecha'] = pd.to_datetime(df_2['Fecha'])
 print(df_2.describe())
