@@ -202,7 +202,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-    C:\Users\anndr\AppData\Local\Temp\ipykernel_1420\273152747.py:2: FutureWarning: The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+   
       Correlacion = df.corr()
     
 
@@ -441,7 +441,7 @@ plt.xticks(rotation=45, ha='right')
 plt.show()
 ```
 
-    C:\Users\anndr\AppData\Local\Temp\ipykernel_1420\394469393.py:7: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+    
       conteo_aeropuerto = top_10_aeropuertos.append(otros_aeropuertos)
     
 
